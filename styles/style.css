@@ -1,15 +1,37 @@
 /* addin-font-family */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* shape-font-family */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+ 
 }
 body{
     background-color: black;
+    font-family: "Inter", sans-serif;
 }
+
+
+
+
+
+/* shared-style */
+
+ .primary-btn{
+   border-radius: 28px;
+   padding:10px 16px 10px 16px;
+   border: none;
+   background: rgb(230, 83, 60);
+   color: rgb(255, 255, 255);
+   font-size: 12px;
+
+}
+
 
 header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
@@ -63,3 +85,139 @@ nav ul li a{
 }
 
 /* navigation-bar-ends-here */
+
+
+/* banner-section-start-here */
+
+#banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 30%;
+
+}
+
+
+
+.title-corner{
+    width: 400px;
+    height: 294px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title-corner h1{
+ color: rgb(255, 255, 255);
+ font-size: 52px;
+ font-weight:900;
+ line-height: 120%;
+ text-align: left;
+}
+
+.title-corner  .shape-span{
+  font-family: "Dancing Script", cursive;
+  font-size: 5.5rem;
+}
+
+.title-corner p{
+color: rgba(255, 255, 255, 0.5);
+font-size: 10px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-bottom: 20px;
+}
+
+
+
+.title-corner .app-btn{
+    border-radius: 28px;
+   padding:10px 16px 10px 16px;
+   border: 1px solid rgb(112, 109, 109);
+   color: rgb(146, 136, 136);
+   background: transparent;
+}
+
+/* hero-ection-image */
+
+.hero-image {
+  background-image: url(../assets/Images\ 2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 570px;
+  width: 360px;
+}
+
+.card{
+    width: 129px;
+    height: 65px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    margin-top: 40%;
+    margin-left: 60%;
+
+}
+.card h2{
+    color: rgb(255, 255, 255);
+}
+.card p{
+    text-align: left;
+    font-size: 11px;
+    color: rgb(180, 193, 204);
+}
+
+.parent-card{
+    display: flex;
+}
+.parent-card span{
+   margin-top: 10px;
+   margin-right: 5px; 
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   background: rgb(230, 83, 60);;
+}
+.parent-card h2{
+  font-size: 21px;
+
+}
+.card-2{
+    width: 129px;
+    height: 65px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 6px 10px 6px 10px;
+    margin-top:60%;
+
+
+}
+.card-2 h2{
+     color: rgb(255, 255, 255);
+}
+
+.card-2 p{
+    text-align: left;
+    font-size: 11px;
+    color: rgb(180, 193, 204);
+}
+
+/* banner-section-end here */
