@@ -37,7 +37,7 @@ header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     max-width: 90%;
     height: 715px;
-    border: 2px solid white;
+    padding: 19px 29px 19px 29px;
     margin: 0 auto;
 }
 
@@ -48,8 +48,8 @@ header{
 }
 
 .logo h2{
-    font-style: italic;
-    font-size: 2rem;
+    font-style: italic; 
+    font-size: 3rem;
 }
 nav{
     display: flex;
@@ -94,7 +94,7 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     padding-top: 40px;
-    gap: 30%;
+    gap: 20%;
 
 }
 
@@ -221,3 +221,72 @@ margin-bottom: 20px;
 }
 
 /* banner-section-end here */
+
+
+/* habit-section */
+
+#habit-section{
+    width: 65%;
+    height: 420px;
+    border: 2px solid white;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.title-peremiter{
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.title-peremiter h3{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 7px;
+}
+
+.title-peremiter p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+
+.img-corner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+
+}
+
+.card-1{
+    height: 250px;
+    width:157px;
+    margin: 0 auto;
+
+}
+
+.card-1 img{
+    width: 154px;
+    border-radius: 50%;
+}
+
+.card-1 h4{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+.card-1 p{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 12px;
+   
+}
+
+/* habit-section-end here */
