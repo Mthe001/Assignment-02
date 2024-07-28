@@ -35,7 +35,7 @@ body{
 
 header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    max-width: 90%;
+    max-width: 100%;
     height: 715px;
     padding: 19px 29px 19px 29px;
     margin: 0 auto;
@@ -56,8 +56,9 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 40%;
-    width: 90%;
+    width: 95%;
     margin: 2rem auto;
+    border: 1px solid white;
     
 }
 
@@ -73,6 +74,7 @@ nav ul{
     padding-right: 7px;
     
 }
+
 li span{
    background-color: rgb(230, 83, 60);
    border-radius: 39px;
@@ -84,6 +86,10 @@ nav ul li a{
 
 }
 
+.menu-bar{
+    display: none;
+}
+
 /* navigation-bar-ends-here */
 
 
@@ -93,8 +99,9 @@ nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
-    gap: 20%;
+    padding-top: 4%;
+    gap: 30%;
+    border: 2px solid white;
 
 }
 
@@ -151,6 +158,7 @@ margin-bottom: 20px;
   background-repeat: no-repeat;
   height: 570px;
   width: 360px;
+  position: relative;
 }
 
 .card{
@@ -165,8 +173,9 @@ margin-bottom: 20px;
     flex-direction: column;
     text-align: center;
     padding: 5px 10px 5px 10px;
-    margin-top: 40%;
-    margin-left: 60%;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 45%;
 
 }
 .card h2{
@@ -206,7 +215,8 @@ margin-bottom: 20px;
     text-align: center;
     justify-content: center;
     padding: 6px 10px 6px 10px;
-    margin-top:60%;
+    position: absolute;
+    margin-top: 110%;
 
 
 }
@@ -226,13 +236,13 @@ margin-bottom: 20px;
 /* habit-section */
 
 #habit-section{
-    width: 65%;
-    height: 420px;
+    border: 2px solid white;
+    width: 70%;
+    height: 400px;
     margin: 5rem auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .title-peremiter{
@@ -290,32 +300,229 @@ margin-bottom: 20px;
 
 /* habit-section-end here */
 
+/* run-extra mile section-start-here */
+
 #run-section{
-     width: 65%;
-    height: 350px;
-    border: 2px solid white;
+    width: 60%;
+    height: 320px;
     margin: 5rem auto;
     border-radius: 12px;
     background: rgb(34, 34, 34);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   
 }
+
+.parent-box{
+    display: flex;
+    height: 85%;
+    gap: 20%;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .title-div{
-    text-align: left;
+    width: 400px;
+    border: 1px solid white;
 }
-
 .title-div h3{
-    font-size: 49px;
-    color: white;
+ color: rgb(255, 255, 255);
+font-size: 39px;
+font-weight: 800;
+line-height: 37px;
+height: 100px;
+width:250px;
+text-align: left;
 }
 
 .title-div p{
-    color: rgba(255, 255, 255, 0.5);
+color: rgba(255, 255, 255, 0.5);
 font-size: 10px;
 font-weight: 400;
-line-height: 16px;
+line-height: 13px;
 letter-spacing: 0.5px;
 text-align: left;
+height: 50px;
 }
+#run-section-btn{
+    padding: 10px 49px 10px 49px;
+    margin-bottom: 10px;
+}
+
+.image-div{
+    width: 280px;
+}
+#run-man{
+    border-radius: 7px;
+}
+
+/* BMI-title-section */
+
+#title-BMI{
+    width: 40%;
+    height: 110px;
+    border: 2px solid white;
+    margin: 5rem auto;
+}
+
+.title-BMI h3{
+  color: rgb(255, 255, 255);
+
+font-size: 38px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.title-BMI p{
+color: rgba(255, 255, 255, 0.5);
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: left;
+}
+
+
+/* BMI_Calculator-section */
+
+
+#bmi-section{
+    width: 90%;
+    height: 450px;
+    margin: 5rem auto;
+    background: rgb(34, 34, 34);
+    border: 2px solid white;
+}
+
+
+
+
+
+
+/* responsive-center */
+
+@media screen and (max-width: 576px) {
+ 
+    
+    header{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    nav{
+    width: 80%;
+    gap: 35%;
+
+    }
+
+    nav ul{
+    
+    display: none;
+    }
+   
+    .menu-bar{
+        color: white;
+        size: 50px;
+        display: inline-flex;
+    }
+
+   .title-corner{
+    margin: 0;
+   }
+    
+
+   .btn-section{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-right:10% ;
+   }
+    
+   .primary-btn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+   }
+   .app-btn{
+    padding-top: 15px;
+     height: 45px;
+    width: 50%;
+   }
+    
+    #banner-section{
+        margin: 5rem auto;
+        flex-direction: column;
+        height: 940px;
+        width: 80%;
+        gap: 5%;
+    }
+   
+     
+    
+
+
+    #habit-section{
+        height: 1150px;
+    }
+    .title-peremiter{
+        width: 100%;
+        text-align: center;
+    }
+    .img-corner{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    #run-section{
+        width: 70%;
+        height: 670px;
+    }
+    .parent-box{
+        flex-direction: column;
+
+    }
+    .title-div{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 15px;
+        padding-top: 10px;
+    
+    }
+    .title-div h3{
+     font-size: 40px;
+    
+    }
+    .title-div p{
+      font-size: 14px;  
+      text-align: left;
+      line-height: 130%;
+      letter-spacing: 0.4px;
+    }  
+    #run-section-btn{
+      padding-left:130px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 130px;  
+      margin-top: 55px;   
+      font-size: 20px;
+    }
+    
+    .image-div{
+        width: 330px;
+        height: 200px;
+        border: 2px solid white;
+    }
+    #run-man{
+      
+    }
+ 
+     #bmi-section{
+        width: 60%;
+     }
+
+
+
+} 
