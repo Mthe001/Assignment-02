@@ -58,7 +58,6 @@ nav{
     gap: 40%;
     width: 95%;
     margin: 2rem auto;
-    border: 1px solid white;
     
 }
 
@@ -101,7 +100,6 @@ nav ul li a{
     justify-content: center;
     padding-top: 4%;
     gap: 30%;
-    border: 2px solid white;
 
 }
 
@@ -236,7 +234,6 @@ margin-bottom: 20px;
 /* habit-section */
 
 #habit-section{
-    border: 2px solid white;
     width: 70%;
     height: 400px;
     margin: 5rem auto;
@@ -323,7 +320,6 @@ margin-bottom: 20px;
 
 .title-div{
     width: 400px;
-    border: 1px solid white;
 }
 .title-div h3{
  color: rgb(255, 255, 255);
@@ -352,6 +348,9 @@ height: 50px;
 .image-div{
     width: 280px;
 }
+.image-div-2{
+    display: none;
+}
 #run-man{
     border-radius: 7px;
 }
@@ -361,7 +360,6 @@ height: 50px;
 #title-BMI{
     width: 40%;
     height: 110px;
-    border: 2px solid white;
     margin: 5rem auto;
 }
 
@@ -391,28 +389,192 @@ text-align: left;
 #bmi-section{
     width: 90%;
     height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 5rem auto;
-    background: rgb(34, 34, 34);
-    border: 2px solid white;
+    background: rgb(48, 34, 34);
+    border-radius: 5px;
+}
+
+
+/* left-side of BMI section start here*/
+
+.bmi-chart{
+ width: 35%;
+ height: 100%;
+ padding: 20px 40px;
+}
+
+.bmi-title{
+color: rgb(255, 255, 255);
+font-size: 28px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+padding-left: 20px;
+padding-top: 40px;
+}
+.table{
+  padding-top: 60px;
+  padding-left: 20px;  
+  
+    
+}
+
+table{
+    width: 350px;
+    height:120px;
+    
+}
+
+th{
+    padding: 10px 20px;
+    height: 25px;
+    color: rgb(223, 213, 213);
+    font-weight: 400;
+}
+
+table, th, td{
+  border: 1px solid rgba(114, 71, 71, 0.1);
+  border-collapse: collapse;
+}
+
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    font: 10px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* left side of Bmi section end here */
+
+
+
+
+/* right side of bmi section start here */
+
+.parent-input-area{
+    height: 100%;
+    padding-left: 100px;
+}
+
+.bmi-title p{
+color: rgba(255, 255, 255, 0.5);
+width: 90%;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: left;
+  
+}
+
+.bmi-form{
+    width: 90%;
+    height: 73%;
+}
+
+form{
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 100%;
+    height: 60%;
+}
+
+.parent-factor{
+    width: 100%;
+    height: 100%;
+}
+
+.first-line{
+ width: 100%;
+ 
+}
+
+.first-linee{
+    width: 310px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 
 
+.second-line{
+    padding-top: 10px;
+}
+
+#gender{
+     width: 310px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.last-line{
+    padding-top: 12px;
+}
+
+#acitvity-factor{
+    width:98%;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);   
+}
+
+.btn{
+  padding-left:15px ;  
+  width: 40%;
+  height: 48px;
+}
+.btn > button{
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+}
 
 
-
-/* responsive-center */
+/* responsive-area */
 
 @media screen and (max-width: 576px) {
  
     
     header{
         width: 100%;
-        height: 100%;
-        overflow-x: hidden;
+        height: 1250px;
+    
     }
     nav{
-    width: 80%;
+    width: 100%;
     gap: 35%;
 
     }
@@ -424,62 +586,90 @@ text-align: left;
    
     .menu-bar{
         color: white;
-        size: 50px;
+        font-size: 24px;
         display: inline-flex;
     }
 
    .title-corner{
-    margin: 0;
+    margin: 0 auto;
+   }
+   .title-corner h1{
+    font-weight: 700;
+    line-height: 50px;
+   }
+   .title-corner p{
+    
+    padding-top: 7%;
+    font-size: 17px;
+    width: 79%;
+    line-height: 140%;
    }
     
 
    .btn-section{
-    width: 100%;
+    width: 110%;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    padding-right:10% ;
+    
+    
    }
     
    .primary-btn{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
     width: 50%;
    }
    .app-btn{
-    padding-top: 15px;
-     height: 45px;
-    width: 50%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+     height: 49px;
+     width: 50%;
+     font-size: 20px;
    }
     
     #banner-section{
         margin: 5rem auto;
         flex-direction: column;
-        height: 940px;
-        width: 80%;
+        height: 1100px;
+        width: 100%;
         gap: 5%;
     }
    
+   .hero-image{
+       height: 600px;   
+    }
      
     
-
+   
+    /* change your habit section start here */
 
     #habit-section{
         height: 1150px;
+        border: none;
     }
     .title-peremiter{
         width: 100%;
         text-align: center;
     }
+    .title-peremiter h3{
+        width: 99%;
+        font-size: 220%;
+    }
+    .title-peremiter p{
+        font-size: 15px;
+        line-height: 170%;
+        width: 94%;
+        padding-left: 7px;
+
+    }
     .img-corner{
         grid-template-columns: repeat(1, 1fr);
 
     }
-    #run-section{
-        width: 70%;
-        height: 670px;
-    }
+
     .parent-box{
         flex-direction: column;
 
@@ -501,27 +691,171 @@ text-align: left;
       line-height: 130%;
       letter-spacing: 0.4px;
     }  
+
+   /* habit section end here */
+
+
+
+   /* Run an Extra Mile Easily  start here*/
+
+   #run-section{
+    width: 80%;
+    height: 600px;
+   }
+  
+
+   .parent-box{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+   }
+
+   .title-div{
+    height: 50%;
+    padding-bottom: 120px;
+    border: none;
+     
+   }
     #run-section-btn{
-      padding-left:130px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-right: 130px;  
-      margin-top: 55px;   
-      font-size: 20px;
+     margin-top: 80px;
+     width: 95%;
+     font-size: 20px;
+
     }
     
     .image-div{
-        width: 330px;
-        height: 200px;
-        border: 2px solid white;
-    }
-    #run-man{
       
+        display: none;
+
     }
- 
-     #bmi-section{
+    .image-div-2{
+        
+        display: inline;
+        
+    }
+    .image-div-2 img{
+        width: 100%;
+        height: 70%;
+        border-radius: 7px;
+    }
+
+
+    
+    /* B-M=I title-section-part-start here */
+    
+    #title-BMI{
         width: 60%;
+        height: 60%;
+        border: none;
+    }
+
+    .title-BMI{
+        height: 130px;
+    }
+
+  /*B---M--I title-section-part end here */
+
+
+   /* BMI-calculation-section satrt here */
+
+     #bmi-section{
+        width: 70%;
+        height: 700px;
+        flex-direction: column;
      }
+    .bmi-chart{
+        width: 90%;
+        height: 43%;
+        padding: 0;
+        margin: 0;
+    }
+    .bmi-title{
+        
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .bmi-title h3{
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .table{
+        padding: 0;
+        margin: 0;
+        padding-top: 25px;
+        width: 100%;
+    }
+    table{
+        
+        height: 50%;
+        width: 100%;
+    }
+
+  .parent-input-area{
+    padding: 0;
+    margin: 0;
+  }
+  .bmi-title{
+    padding-left: 30px;
+  }
+
+  .bmi-form{
+    width: 100%;
+   
+  }
+  form{
+    width: 100%;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+  }
+  .parent-factor{
+    margin: 0 auto;
+    width: 90%;
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .first-linee{
+    width: 50%;
+  }
+  .second-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  #gender{
+    width: 50%;
+  }
+
+  .last-line{
+    padding-top:10px;
+    padding-left: -2px;
+    width:100%;
+  }
+ 
+  .btn{
+    margin:auto 20px;
+    padding: 0;
+    width: 60%;
+  }
+
+/* Bmi-calculation-ends--here */
+
 
 
 

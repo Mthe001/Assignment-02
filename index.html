@@ -127,6 +127,9 @@
         <div class="image-div">
          <img src="./assets/run.png" id="run-man" width="280px" alt="#">
         </div>
+        <div class="image-div-2">
+          <img src="./assets/run-man.jpg" width="280px" alt="#">
+        </div>
    </div>
 
 </section>
@@ -148,28 +151,82 @@
 <section id="bmi-section">
 
 
+  <!-- left side of BMI section start here  -->
 
   <div class="bmi-chart">
     <div class="bmi-title">
-        <h3></h3>
-        <p></p>
+        <h3>BMI Calculator Chart</h3>
+    
     </div>
 
     <div class="table">
-        
+       
+<table>
+  
+  <tr>
+    <th>BMI</th>
+    <th>Weight Status</th>
+   
+  </tr>
+  <tr>
+    <td>Below 18.5</td>
+    <td>Underweight</td>
+  </tr>
+  <tr>
+    <td>18.5-24.9</td>
+    <td>Healthy</td>
+    
+  </tr>
+  <tr>
+    <td>25.0-29.9</td>
+    <td>Overweight</td>
+  </tr>
+  <tr>
+    <td>30.0-and Above</td>
+    <td>Obese</td>
+  </tr>
+  
+
+</table>
     </div>
 
   </div>
 
+  <!-- left side of BMI-section end here -->
+
    <div class="parent-input-area">
        
      <div class="bmi-title">
-
+        <h3>Calculate your BMI</h3>
+        
+        <p>We believe fitness should be accessible 
+          to everyone, everywhere, regardless of income or access to a gym. </p>
 
      </div>
 
     <div class="bmi-form">
-
+        <form action="input">
+           <div class="parent-factor">
+               <div class="first-line">
+           <input type="text" placeholder="Height/cm" class="first-linee">
+           <input type="text" placeholder="Weight/Kg" class="first-linee">
+          </div>
+          <div class="second-line ">
+              <input type="text" placeholder="Age" class="first-linee">
+             <select name="gender" id="gender" class="first-linee">
+                <option value="Gender">Gender</option>
+             </select>
+          </div>
+          <div class="last-line">
+            <select name="activty-factor" id="acitvity-factor">
+                <option value="Gender" >Select an acitvity factor</option>
+            </select>
+          </div>
+           </div>
+        </form>
+         <div class="btn">
+            <button type="submit" class="primary-btn">Calculate</button>
+         </div>
     </div>
 
    </div>
