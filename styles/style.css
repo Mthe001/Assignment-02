@@ -387,14 +387,14 @@ text-align: left;
 
 
 #bmi-section{
-    width: 90%;
+    width: 100%;
     height: 450px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 5rem auto;
-    background: rgb(48, 34, 34);
-    border-radius: 5px;
+    background: rgb(31, 21, 21);
+    
 }
 
 
@@ -518,7 +518,7 @@ form{
 }
 
 #gender{
-     width: 310px;
+    width: 310px;
     height: 48px;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
@@ -537,7 +537,7 @@ form{
 }
 
 #acitvity-factor{
-    width:98%;
+    width:94%;
     height: 48px;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
@@ -561,6 +561,189 @@ form{
     width: 100%;
     height: 100%;
 }
+
+
+/* Bmi-calculation-ends--here */ 
+
+#meet-our-team{
+    width: 70%;
+    height: 750px;
+    margin: 5rem auto;
+   
+    
+}
+
+.parent-team{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    
+}
+.ourteam-title{
+    margin: 0 auto;
+}
+.ourteam-title h4{
+ color: rgb(255, 255, 255); 
+ text-align: center;
+font-size: 48px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+
+}
+
+.ourteam-title p{
+ color: rgba(255, 255, 255, 0.5);
+ font-family: Inter;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.3px;
+ text-align: center;
+}
+
+.img-div{
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 18px;
+     background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+#traineer{
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 30px;
+}
+
+
+
+/* challange-section start here */
+
+
+#challange-section{
+    width: 85%;
+    height: 650px;
+    margin: 5rem auto;
+    border-radius: 10px;
+    background-color: rgba(104, 128, 84, 0.233);
+}
+
+.title_div{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.title_div h3{
+    color: rgb(101, 248, 72);
+    font-size: 2.9rem;
+}
+
+.title_div p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+#course-btn{
+    display: none;
+}
+.challange-video-section{
+    width: 90%;
+    margin: 0 auto;
+    height: 80%;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.challange-video-section iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+
+/* challange-section end here */
+
+
+
+/* footer-section start here */
+
+#footer-section{
+    width: 100%;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.grand-div{
+    padding: 50px 230px 70px 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logo{
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.footer-links{
+    padding: 20px 24px 20px 24px;
+    width: 330px;
+   
+    
+}
+
+
+.footer-links ul h3{
+  color: white;
+  font-size: 32px;
+
+}
+.footer-links ul li{
+ list-style: none;
+}
+
+.footer-links ul li a{
+  padding-top: 20px;  
+  font-size: 20px; 
+  text-decoration: none;
+  color: rgba(236, 229, 229, 0.233);
+  cursor: pointer;
+}
+.footer-links p{
+color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: left;   
+}
+
+
+.hr-class p{
+    padding-top: 40px;
+    color: rgb(145, 143, 140);
+    text-align: center;
+    font-size: 1.4rem;
+    width: 100%;
+}
+/* footer-section end here */
+
+
+
+
+
+
+
+
 
 
 /* responsive-area */
@@ -759,7 +942,7 @@ form{
   /*B---M--I title-section-part end here */
 
 
-   /* BMI-calculation-section satrt here */
+   /* BMI-calculation-section start here */
 
      #bmi-section{
         width: 70%;
@@ -773,7 +956,6 @@ form{
         margin: 0;
     }
     .bmi-title{
-        
         width: 100%;
         padding: 0;
         margin: 0;
@@ -844,7 +1026,6 @@ form{
 
   .last-line{
     padding-top:10px;
-    padding-left: -2px;
     width:100%;
   }
  
@@ -854,9 +1035,76 @@ form{
     width: 60%;
   }
 
-/* Bmi-calculation-ends--here */
+
+ #meet-our-team{
+    height: 1260px;
+ }
+ .parent-team{
+    height: 97%;
+ }
+ 
+ #trainee{
+  width: 50%;
+  height: 50%;
+ }
+ .trainee{
+    display: none;
+ }
+ .img-div{
+    height: 90%;
+    grid-template-columns: repeat(1, 1fr);
+ }
+ 
+/* challange-section start here */
+
+#challange-section{
+    height: 500px;
+}
+ .title_div{
+    padding-top: 20px;
+ }
+ .title_div h3{
+  font-size: 24px;
+ }
+ .title_div p{
+    font-size:10px;
+ }
+ .challange-video-section{
+   margin-top: 60px;
+    width: 90%;
+    height: 50%;
+
+ }
+ .btn-2{
+    margin: 0 auto;
+    width: 90%;
+ }
+ #course-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+ }
+/* challange-section end here */
 
 
 
 
-} 
+
+/* footer section start here */
+#footer-section{
+    height: 100%;
+}
+ .grand-div{
+    padding: 0;
+    flex-direction: column;
+ }
+ 
+ .hr-class p{
+    padding-bottom: 30px;
+ }
+
+ /* footer section end here */
+
+}
